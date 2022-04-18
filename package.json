@@ -1,0 +1,35 @@
+{
+  "name": "react-rethinkable",
+  "version": "0.0.1",
+  "description": "Unlock the ability to cancel HTTP requests",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "files": ["./lib"],
+  "scripts": {
+    "start": "cd test && npm start",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "publish": "npm build && npm publish"
+  },
+  "keywords": [
+    "react",
+    "react.js",
+    "typescript",
+    "hook"
+  ],
+  "author": "hassanMuhamad",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.0.5",
+    "@types/react-dom": "^18.0.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "typescript": "^4.6.3"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
