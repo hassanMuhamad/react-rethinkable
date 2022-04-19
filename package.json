@@ -11,7 +11,7 @@
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
-    "publish": "npm build && npm publish"
+    "publish": "npm run build && npm publish"
   },
   "keywords": [
     "react",
